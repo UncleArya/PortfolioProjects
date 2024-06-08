@@ -1,0 +1,47 @@
+{% extends "base.html" %} {% block title %}Edit Game{% endblock %} {% block content %}
+<div class="container">
+	<div>
+		<h1 class="pb-2">Add New Game</h1>
+		<form class="add-form" method="POST" action="{{ url_for('add')}}">
+			<div class="col-6 form-body">
+				{{ form.csrf_token }}
+				<div class="row form-title p-1">
+					<div class="row">{{ form.title.label }}</div>
+					<div class="row">{{ form.title }}</div>
+				</div>
+				<div class="row form-year p-1">
+					<div class="row">{{ form.year.label }}</div>
+					<div class="row">{{ form.year }}</div>
+				</div>
+				<div class="row form-developer p-1">
+					<div class="row">{{ form.developer.label }}</div>
+					<div class="row">{{ form.developer }}</div>
+				</div>
+				<div class="row form-genre p-1">
+					<div class="row">{{ form.genre.label }}</div>
+					<div class="row">{{ form.genre }}</div>
+				</div>
+				<div class="row form-description p-1">
+					<div class="row">{{ form.description.label }}</div>
+					<div class="row">{{ form.description }}</div>
+				</div>
+				<div class="row form-rating p-1">
+					<div class="row">{{ form.rating.label }}</div>
+					<div class="row">{{ form.rating }}</div>
+				</div>
+				<div class="row form-review p-1">
+					<div class="row">{{ form.review.label }}</div>
+					<div class="row">{{ form.review }}</div>
+				</div>
+				<div class="row form-cover-art p-1">
+					<div class="row">{{ form.cover_art.label }}</div>
+					<div class="row">{{ form.cover_art }}</div>
+				</div>
+				<div class="row form-submit text-center p-5">
+					<div class="col">{{ form.submit }}</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "base.html" %} {% block title %}Edit Game{% endblock %} {% block content %}
+<div class="container">
+	<div class="header">
+		<h1 class="pb-2">Edit Game Information</h1>
+		<h2 class="pb-2">Editing: {{ game.title }}</h2>
+		<form class="edit-form" method="POST" action="{{ url_for('edit')}}">
+			<div class="form-body">
+				{{ form.csrf_token }}
+				<input hidden="hidden" name="game_id" value="{{ game.id }}" />
+				<div class="row form-title p-1">
+					{{ form.title.label }}
+					<div class="col edit">{{ form.title }}</div>
+					<div class="col current">{{ game.title }}</div>
+				</div>
+				<div class="row form-rating p-1">
+					{{ form.rating.label }}
+					<div class="col">{{ form.rating }}</div>
+					<div class="col">{{ game.rating}}</div>
+				</div>
+				<div class="row form-developer p-1">
+					{{ form.developer.label }}
+					<div class="col">{{ form.developer }}</div>
+					<div class="col">{{ game.developer }}</div>
+				</div>
+				<div class="row form-year p-1">
+					{{ form.year.label }}
+					<div class="col">{{ form.year }}</div>
+					<div class="col">{{ game.year }}</div>
+				</div>
+				<div class="row form-genre p-1">
+					{{ form.genre.label }}
+					<div class="col">{{ form.genre }}</div>
+					<div class="col">{{ game.genre}}</div>
+				</div>
+				<div class="row form-description p-1">
+					{{ form.description.label }}
+					<div class="col">{{ form.description }}</div>
+					<div class="col">{{ game.description }}</div>
+				</div>
+				<div class="row form-review p-1">
+					{{ form.review.label }}
+					<div class="col">{{ form.review }}</div>
+					<div class="col">{{ game.review }}</div>
+				</div>
+				<div class="row form-cover-art p-1">
+					{{ form.cover_art.label }}
+					<div class="col">{{ form.cover_art }}</div>
+					<div class="col"><img src="{{ game.cover_art }}" alt="" class="thumbnail" /> <br /></div>
+				</div>
+				<div class="row form-submit text-center p-5">
+					<div class="col">{{ form.submit }}</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}
