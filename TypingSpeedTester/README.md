@@ -10,7 +10,7 @@
 ## Program Functionality
 
 -   ~~Register user input~~
--   Display prompts
+-   ~~Display prompts~~
 -   Create word bank
 -   Detect letter accuracy
 -   Detect word accuracy
@@ -29,6 +29,7 @@
     -   GUI
     -   Logic
 -   Centre input in entry box
+-   Detect when paragraph is over and go to next one
 
 ## Potential advanced features
 
