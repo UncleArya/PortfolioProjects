@@ -7,16 +7,16 @@
     -   ~~Word prompt~~
     -   ~~User entry~~
 
-## Program Functionality
+## ~~Program Functionality~~
 
 -   ~~Register user input~~
 -   ~~Display prompts~~
--   Create word bank
--   Detect letter accuracy
--   Detect word accuracy
+-   ~~Create word bank~~
+-   ~~Detect word accuracy~~
 
 ## Finalize GUI
 
+-   Display past and upcoming words
 -   Create a background image
 -   Advanced functions:
     -   Timer
@@ -25,11 +25,18 @@
 
 ## Bug Fixes
 
--   Refactor into multiple files:
+-   Create end/start functions
+-   Refactor into multiple files/classes:
     -   GUI
     -   Logic
 -   Centre input in entry box
 -   Detect when paragraph is over and go to next one
+-   Remove some punctuation (;")
+-   Make word bank bigger
+-   Make return start game, not have all same functions as Space
+-   Return while timer running doubles time loss
+-   Better names for functions
+-   Docstrings
 
 ## Potential advanced features
 
@@ -38,3 +45,4 @@
 -   Turn into a web app
 -   Progressbar widget for timer?
 -   Info/instructions screen
+-   Letter accuracy as typed
