@@ -37,6 +37,7 @@
 -   Return while timer running doubles time loss
 -   Better names for functions
 -   Docstrings
+-   Put Entry Label in background, not in entry box
 
 ## Potential advanced features
 
