@@ -16,20 +16,21 @@
 
 ## Finalize GUI
 
--   Display past and upcoming words
--   Create a background image
--   Advanced functions:
-    -   Timer
-    -   WPM
-    -   Accuracy
+-   ~~Display past and upcoming words~~
+-   ~~Create a background image~~
+-   ~~Advanced functions:~~
+    -   ~~Timer~~
+    -   ~~WPM~~
+    -   ~~Accuracy~~
 
 ## Bug Fixes
 
+-   ~~Put Entry Label in background, not in entry box~~
 -   Create end/start functions
 -   Refactor into multiple files/classes:
     -   GUI
     -   Logic
--   Centre input in entry box
+-   ~~Centre input in entry box~~
 -   Detect when paragraph is over and go to next one
 -   Remove some punctuation (;")
 -   Make word bank bigger
@@ -37,7 +38,6 @@
 -   Return while timer running doubles time loss
 -   Better names for functions
 -   Docstrings
--   Put Entry Label in background, not in entry box
 
 ## Potential advanced features
 
