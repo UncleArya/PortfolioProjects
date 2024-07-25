@@ -1,5 +1,8 @@
 # Typing Speed Tester
 
+![image](https://github.com/user-attachments/assets/8461139f-6611-47e7-a08d-995abe79a543) ![image](https://github.com/user-attachments/assets/98f5c4a9-01bf-44f9-8af8-692875be63f4)
+
+
 ## Skills Used:
 
 -   Python
