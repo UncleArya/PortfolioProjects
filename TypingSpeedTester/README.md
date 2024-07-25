@@ -26,24 +26,15 @@
 ## Bug Fixes
 
 -   ~~Put Entry Label in background, not in entry box~~
--   Create end/start functions
+-   ~~Centre input in entry box~~
+-   ~~Create end/reset functions~~
+-   ~~Ensure start can only be hit if timer not active~~
+-   ~~End screen when timer up~~
+-   ~~Remove some punctuation (;")~~
+-   ~~Make word bank bigger~~
+-   ~~Calculate WPM on time update, not on space~~
 -   Refactor into multiple files/classes:
     -   GUI
     -   Logic
--   ~~Centre input in entry box~~
--   Detect when paragraph is over and go to next one
--   Remove some punctuation (;")
--   Make word bank bigger
--   Make return start game, not have all same functions as Space
--   Return while timer running doubles time loss
 -   Better names for functions
 -   Docstrings
-
-## Potential advanced features
-
--   Select amount of time to type
--   High score tracker
--   Turn into a web app
--   Progressbar widget for timer?
--   Info/instructions screen
--   Letter accuracy as typed
