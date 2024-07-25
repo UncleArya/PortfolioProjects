@@ -1,6 +1,6 @@
 # Typing Speed Tester
 
-[Screencast from 2024-07-25 15-51-03.webm](https://github.com/user-attachments/assets/8e0c66ed-e0af-45a5-a527-816e09cbd05f)
+[Arya's Typing Tester.webm](https://github.com/user-attachments/assets/8e0c66ed-e0af-45a5-a527-816e09cbd05f)
 
 ## Skills Used:
 
