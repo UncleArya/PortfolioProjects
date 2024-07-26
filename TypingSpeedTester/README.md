@@ -1,5 +1,7 @@
 # Typing Speed Tester
 
+A minimalistic typing tester that measures typing speed to provide the user with accuracy and words per minute scores. Includes a custom created GUI and user feedback while typing.
+
 [Arya's Typing Tester.webm](https://github.com/user-attachments/assets/8e0c66ed-e0af-45a5-a527-816e09cbd05f)
 
 ## Skills Used:
