@@ -3,12 +3,8 @@ import random
 
 
 class Game:
-    """
-    Contains the logic required to start and complete a game of Tic Tac Toe. The .start_game() function is all that needs to be called to run the game.
-    """
-
     def __init__(self):
-        """Constructs necessary game attributes."""
+        """Contains the logic required to start and complete a game of Tic Tac Toe. The .start_game() function is all that needs to be called to run the game."""
         self.gameboard = GameBoard()
         self.is_running = True
         self.game_over = False
@@ -29,7 +25,13 @@ class Game:
 
     def player_turn(self, player_name):
         """Begins the human-user turn by prompting for a move input, checking if that board space is playable, and
-        checking for possible win conditions"""
+        checking for possible win conditions.
+
+        Parameters:
+
+        player_name -> str
+            refers to either player 'X' or 'O'
+        """
         if self.is_running:
             player_move = self.obtain_player_move(player=player_name)
             if player_move in self.valid_moves:
@@ -45,7 +47,13 @@ class Game:
                 self.player_turn(player_name)
 
     def obtain_player_move(self, player):
-        """Prompts the player for their desired move."""
+        """Prompts the player for their desired move.
+
+        Parameters:
+
+        player -> str
+            refers to either player 'X' or 'O'
+        """
         player_move = input(f"Player {player} - Enter a row and column value (ex. 'A1'): ").upper()
         return f"{player_move[0]}{player_move[1]}"
 
@@ -61,7 +69,7 @@ class Game:
                 self.computer_turn()
 
     def check_computer_move(self):
-        """During the computer-player turn"""
+        """During the computer-player turn, it is first checked if the computer has a possible win condition, then checked if the computer can block a human-player win condition."""
         for player in [" O ", " X "]:
             if self.gameboard.check_rows_move(player):
                 return self.gameboard.check_rows_move(player)
@@ -71,6 +79,7 @@ class Game:
                 return self.gameboard.check_diagonals_move(player)
 
     def get_computer_move(self):
+        """During the computer-player turn, a request is sent to check for win conditions to play or block. If no win conditions are present, a random move it made."""
         if self.check_computer_move():
             return self.check_computer_move()
         else:
@@ -79,6 +88,7 @@ class Game:
             return f"{row}{column}"
 
     def start_game(self):
+        """Consists of the core game loop and the function that executes the game actions."""
         self.gameboard.draw_board()
         self.gameboard.clear_board()
         if self.game_mode == 0:
@@ -103,6 +113,13 @@ class Game:
                     self.player_turn("X")
 
     def check_win_conditions(self, active_player):
+        """Checks the played move to determine if there is a game winner.
+
+        Parameters:
+
+        active_player -> str
+            refers to either player 'X' or 'O'
+        """
         player = f" {active_player} "
         if (
             self.gameboard.check_rows_for_win(player)
@@ -116,6 +133,7 @@ class Game:
             self.game_replay()
 
     def game_replay(self):
+        """Prompts the human-user to choose to replay or to quit."""
         replay = input("Would you like to play again? (Y/N) ").upper()
         if replay == "Y":
             self.start_game()
