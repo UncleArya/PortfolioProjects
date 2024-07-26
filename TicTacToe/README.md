@@ -2,6 +2,8 @@
 
 A basic game of tic-tac-toe that runs in the terminal. Includes single-player and multi-player modes. When playing single-player, the computer-player makes intelligent moves.
 
+[Tic Tac Toe.webm](https://github.com/user-attachments/assets/a82d1bed-72b8-47cc-b1cd-2c241ba7b327)
+
 ## Skills Used:
 
 -   Python
@@ -28,3 +30,6 @@ A basic game of tic-tac-toe that runs in the terminal. Includes single-player an
     -   If both are false, a random move is made based on remaining spaces
 
 ## Screenshots
+
+![Screenshot from 2024-07-25 20-05-24](https://github.com/user-attachments/assets/521d5c76-4e49-4e51-b23f-21e1b5236bb1)
+![Screenshot from 2024-07-25 20-05-50](https://github.com/user-attachments/assets/14e18ce7-aba2-4747-bde6-efe68b60136d)
