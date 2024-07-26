@@ -7,8 +7,7 @@ from flask_bootstrap import Bootstrap5
 # Creating Flask app
 app = Flask(__name__)
 bootstrap = Bootstrap5(app)
-app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{
-    app.root_path}/video-games.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{app.root_path}/video-games.db"
 db.init_app(app)
 
 
@@ -20,13 +19,7 @@ app.secret_key = "12345"
 @app.route("/")
 def home():
     with app.app_context():
-        data = (
-            db.session.execute(
-                db.select(FavVideoGames).order_by(FavVideoGames.rating.desc())
-            )
-            .scalars()
-            .all()
-        )
+        data = db.session.execute(db.select(FavVideoGames).order_by(FavVideoGames.rating.desc())).scalars().all()
     return render_template("home.html", video_games=data)
 
 

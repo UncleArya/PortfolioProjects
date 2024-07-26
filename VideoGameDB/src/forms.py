@@ -13,9 +13,7 @@ from flask_wtf import FlaskForm
 class AddGameForm(FlaskForm):
     """Form for adding new data in the Database"""
 
-    title = StringField(
-        label="Title", validators=[DataRequired()], render_kw={"class": "form-field"}
-    )
+    title = StringField(label="Title", validators=[DataRequired()], render_kw={"class": "form-field"})
     year = IntegerField(
         label="Year",
         validators=[DataRequired(), NumberRange(min=1960, max=2030)],
@@ -26,9 +24,7 @@ class AddGameForm(FlaskForm):
         validators=[DataRequired()],
         render_kw={"class": "form-field"},
     )
-    genre = StringField(
-        label="Genre", validators=[DataRequired()], render_kw={"class": "form-field"}
-    )
+    genre = StringField(label="Genre", validators=[DataRequired()], render_kw={"class": "form-field"})
     description = TextAreaField(
         label="Game Description",
         validators=[DataRequired(), Length(max=350)],
