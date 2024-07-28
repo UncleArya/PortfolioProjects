@@ -6,7 +6,7 @@ Using several APIs, this program allows for a personal and customizable service 
 
 ![image4](https://github.com/user-attachments/assets/9658e952-ca3a-4baf-bb1d-23c0c92b4066)
 
-**Skills:** Python, API Search Queries, GET Requests, JSON Parsing
+**Skills:** Python, API Search Queries, GET Requests, JSON Parsing, Exception Handling
 
 ## [Video Game Database](https://github.com/UncleArya/PortfolioProjects/blob/main/VideoGameDB/README.md)
 
