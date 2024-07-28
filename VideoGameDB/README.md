@@ -17,7 +17,7 @@ A framework for a locally hosted SQL database with a web-based UI to keep track 
 
 ## Instructions & Features
 
--   pip install the provided requirements.txt file
+-   `pip install` the provided requirements.txt file
 -   Run main.py to initialize the Flask app
 -   Enter the active port in a web browser to utilize the web based UI for viewing and editing your local database
 -   An example database is provided to demonstrate entry fields, but demo entries can be easily deleted
