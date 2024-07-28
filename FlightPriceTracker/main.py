@@ -102,9 +102,14 @@ for airport in DEPARTURES_LIST:
 
         # Find errors and add to notification list
         except AttributeError:
-            print(f"Skipping {destination['city']}...")
-            are_errors = True
-            error_lines.append(destination["city"])
+            # Skip instances where no flight between the 2 airports exists
+            if flight_search.no_flight_found:
+                pass
+
+            else:
+                print(f"Skipping {destination['city']}...")
+                are_errors = True
+                error_lines.append(destination["city"])
 
     # Pause for 2 minutes to stay within API limit rules
     time.sleep(120)
