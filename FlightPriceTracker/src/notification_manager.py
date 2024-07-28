@@ -1,4 +1,4 @@
-# Files and modules
+# Modules
 import smtplib
 from email.message import EmailMessage
 import datetime
@@ -16,9 +16,15 @@ CURRENT_DATE = datetime.datetime.now()
 
 class NotificationManager:
     def __init__(self, flight_results):
+        """Contains the functions to manage sending emails.
+
+        Args:
+            flight_results (list): Contains a list of dictionaries that contain search results that have triggered an email.
+        """
         self.flight_results = flight_results
 
     def compose_email(self):
+        """Takes dictionary entries and turns them into readable HTML emails."""
         result_num = 1
         messages_as_list = [
             f"<h3>Deals for the week of: {CURRENT_DATE.strftime('%B %d, %Y')}</h3>"
@@ -44,6 +50,7 @@ class NotificationManager:
         return full_message
 
     def send_email(self):
+        """Sends the created email."""
         message = EmailMessage()
         message["From"] = SENDING_EMAIL
         message["To"] = RECEIVING_EMAIL
@@ -59,6 +66,7 @@ class NotificationManager:
             )
 
     def error_email(self, error_content):
+        """Sends an email when an error has occurred in the process of obtaining search results."""
         error_message = EmailMessage()
         error_message["From"] = SENDING_EMAIL
         error_message["To"] = RECEIVING_EMAIL

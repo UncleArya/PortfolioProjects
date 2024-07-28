@@ -1,5 +1,6 @@
 .env
 .env-*
+_resources/
 
 # Python
 __pycache__/
