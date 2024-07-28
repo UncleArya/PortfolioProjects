@@ -20,7 +20,7 @@ HEADERS = {
 class FlightSearch:
     def __init__(self):
         """Contains the functions to interact with the Kiwi API."""
-        pass
+        self.no_flight_found = False
 
     def get_flight_price(
         self,
@@ -87,8 +87,9 @@ class FlightSearch:
         try:
             data = request_data.json()["data"][0]
         except IndexError:
-            print(f"No flights found for {departure_airport} to {arrival_airport}.")
-            return None
+            print(f"No flights exist for {departure_airport} to {arrival_airport}.")
+            self.no_flight_found = True
+            return self.no_flight_found
         except KeyError:
             print(f"Error in spreadsheet for {departure_airport} to {arrival_airport}.")
             return None
