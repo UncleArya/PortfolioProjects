@@ -24,10 +24,10 @@ Using several APIs, this program allows for a personal and customizable service 
 
 ## Instructions:
 
-[1. Setup a Google Sheet](#google-sheet-setup)
-[2. Create a Project with Sheety API](#create-sheety-project)
-[3. Create a Kiwi Account](#create-kiwi-account)
-[4. Enter API & Personal Credentials](#enter-credentials)
+[1. Setup a Google Sheet](###google-sheet-setup)
+[2. Create a Project with Sheety API](###create-sheety-project)
+[3. Create a Kiwi Account](###create-kiwi-account)
+[4. Enter API & Personal Credentials](###enter-credentials)
 
 ### Google Sheet Setup
 
