@@ -102,7 +102,7 @@ for airport in DEPARTURES_LIST:
 
         # Find errors and add to notification list
         except AttributeError:
-            print(f"Skipping {destination["city"]}...")
+            print(f"Skipping {destination['city']}...")
             are_errors = True
             error_lines.append(destination["city"])
 
