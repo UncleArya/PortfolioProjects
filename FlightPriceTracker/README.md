@@ -2,7 +2,7 @@
 
 Using several APIs, this program allows for a personal and customizable service that sends an email to your inbox whenever a flight to any listed destination is found that matches your desired search parameters. The destination list is flexible and easy to add to, and search parameters are simple to manage and update, all using a Google Sheet. Find cheap flights anywhere in the world on any airline using this program.
 
-## Skills
+## Skills Used:
 
 -   Python
     -   Requests framework
@@ -18,9 +18,9 @@ Using several APIs, this program allows for a personal and customizable service 
     -   Data POST
     -   Request limiting
 
-![Flight results](./_resources/image4.png)
+![image4](https://github.com/user-attachments/assets/22e498be-3bc8-44de-bd58-4e15f4487272)
 
-![Flight email](./_resources/image5.png)
+![image5](https://github.com/user-attachments/assets/38e92d57-685e-468d-ae65-a33f6b59776e)
 
 ## Instructions:
 
@@ -31,7 +31,7 @@ Using several APIs, this program allows for a personal and customizable service 
 
 ### Google Sheet Setup
 
-![Google Sheet](./_resources/image.png)
+![image](https://github.com/user-attachments/assets/dd0eb99f-3e81-446a-bc35-87569cfa8258)
 
 Create a new Google Sheet and create 4 tabs with the following names:
 
@@ -42,7 +42,7 @@ Create a new Google Sheet and create 4 tabs with the following names:
 
 ### Create Sheety Project
 
-![Sheety](./_resources/image2.png)
+![image2](https://github.com/user-attachments/assets/0e390220-78f3-41f7-a3d0-6a8cdc79ab93)
 
 [Sheety](https://sheety.co/) is the API used to both GET and POST fields from our Google Sheet. Full documentation on how to use Sheety can be [found here](https://sheety.co/docs/spreadsheet).
 
@@ -50,7 +50,7 @@ Create a new project and use the link for the new Google Sheet created for this 
 
 ### Create Kiwi Account
 
-![Kiwi](./_resources/image3.png)
+![image3](https://github.com/user-attachments/assets/ffd39058-28f5-49d8-a91b-e8cc23581ead)
 
 [Kiwi](https://tequila.kiwi.com/) is the API used to search for flight deals; full documentation can be [found here](https://tequila.kiwi.com/docs/user_guides/choosing_a_right_solution).
 
