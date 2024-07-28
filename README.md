@@ -1,12 +1,20 @@
 # Python
 
+## [Flight Ticket Price Tracker](https://github.com/UncleArya/PortfolioProjects/blob/main/FlightPriceTracker/README.md)
+
+Using several APIs, this program allows for a personal and customizable service that sends an email to your inbox whenever a flight to any listed destination is found that matches your desired search parameters. The destination list is flexible and easy to add to, and search parameters are simple to manage and update, all using a Google Sheet. Find cheap flights anywhere in the world on any airline using this program.
+
+![image4](https://github.com/user-attachments/assets/9658e952-ca3a-4baf-bb1d-23c0c92b4066)
+
+**Skills:** Python, API Search Queries, GET Requests, JSON Parsing
+
 ## [Video Game Database](https://github.com/UncleArya/PortfolioProjects/blob/main/VideoGameDB/README.md)
 
 A framework for a locally hosted SQL database with a web-based UI to keep track of your favourite video games. Uses Flask as a web framework while also utilizing Bootstrap, custom CSS, and some JavaScript for styling. Uses SQL Alchemy for database management and WTForms for data input.
 
 ![image](https://github.com/user-attachments/assets/14a48b36-4e59-4462-a34c-b8dbb0cc009a)
 
-**Skills:** Python, Flask, SQL Alchemy, WTForms, Css, Bootstrap, JavaScript, UI/UX Design
+**Skills:** Python, Flask, SQL Alchemy, WTForms, CSS, Bootstrap, JavaScript, UI/UX Design
 
 ## [Typing Speed Tester](https://github.com/UncleArya/PortfolioProjects/blob/main/TypingSpeedTester/README.md)
 
