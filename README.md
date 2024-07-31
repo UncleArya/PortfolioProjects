@@ -24,6 +24,14 @@ A minimalistic typing tester that measures typing speed to provide the user with
 
 **Skills:** Python, Tkinter, UI/UX Design
 
+## [Image Resizer](https://github.com/UncleArya/PortfolioProjects/blob/main/ImageResizer/README.md)
+
+A program with a basic and minimalistic GUI that quickly resizes images. Using Python, Tkinter, and the Pillow imaging library, you can quickly create a copy of an image with a smaller file size and resolution, downscaled based on requested dimensions or percentage calculation.
+
+![github4](https://github.com/user-attachments/assets/2b694b8f-6c0d-41d4-810a-11e6e7c0efbf)
+
+**Skills:** Python, Tkinter, Pillow, UI/UX Design
+
 ## [Tic Tac Toe](https://github.com/UncleArya/PortfolioProjects/blob/main/TicTacToe/README.md)
 
 A basic game of tic-tac-toe that runs in the terminal. Includes single-player and multi-player modes. When playing single-player, the computer-player makes intelligent moves.
