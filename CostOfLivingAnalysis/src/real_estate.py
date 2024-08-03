@@ -38,3 +38,6 @@ class Real_Estate:
             real_estate_csv = csv.writer(csv_file)
             for listing in self.real_estate_prices:
                 real_estate_csv.writerow([listing])
+
+    def obtain_real_estate_data(self):
+        pass
