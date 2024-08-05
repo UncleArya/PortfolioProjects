@@ -5,6 +5,7 @@ A financial analysis of the cost of living in Victoria, BC is done using web scr
 ## Skills Used:
 
 -   Python
+    -   Flask
     -   Requests
     -   CSV
     -   Custom Classes and Functions
