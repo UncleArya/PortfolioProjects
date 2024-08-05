@@ -1,4 +1,11 @@
-# Python
+# My Portfolio of Personal Projects
+
+[Flight Ticket Price Tacker](#flight-ticket-price-tracker)
+[Video Game Database](#video-game-database)
+[Cost of Living Analysis](#cost-of-living-analysis)
+[Typing Speed Tester](#typing-speed-tester)
+[Image Resizer](#image-resizer)
+[Tic Tac Toe](#tic-tac-toe)
 
 ## [Flight Ticket Price Tracker](https://github.com/UncleArya/PortfolioProjects/blob/main/FlightPriceTracker/README.md)
 
