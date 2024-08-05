@@ -16,6 +16,14 @@ A framework for a locally hosted SQL database with a web-based UI to keep track 
 
 **Skills:** Python, Flask, SQL Alchemy, WTForms, CSS, Bootstrap, JavaScript, UI/UX Design
 
+## [Cost of Living Analysis](https://github.com/UncleArya/PortfolioProjects/tree/main/CostOfLivingAnalysis)
+
+A financial analysis of the cost of living in Victoria, BC is done using web scraping and displayed using a basic web GUI. Using the newly obtained data, financial information is displayed about real estate prices, average wages, and estimated expenses involved in the costs of living. Dynamic and real-time calculations are then made analyzing scenarios such as: how long it would take to save for a condo down payment or pay off a mortgage at an average wage, and how long to save for a down payment when working a minimum wage job.
+
+![header](https://github.com/user-attachments/assets/040001e6-0019-4208-8962-8ebbe2cc7ee5)
+
+**Skills:** Python, Web Scraping, Data Science, Flask, Bootstrap, CSS
+
 ## [Typing Speed Tester](https://github.com/UncleArya/PortfolioProjects/blob/main/TypingSpeedTester/README.md)
 
 A minimalistic typing tester that measures typing speed to provide the user with accuracy and words per minute scores. Includes a custom created GUI and user feedback while typing.

@@ -2,6 +2,8 @@
 
 A financial analysis of the cost of living in Victoria, BC is done using web scraping and displayed using a basic web GUI. Using the newly obtained data, financial information is displayed about real estate prices, average wages, and estimated expenses involved in the costs of living. Dynamic and real-time calculations are then made analyzing scenarios such as: how long it would take to save for a condo down payment or pay off a mortgage at an average wage, and how long to save for a down payment when working a minimum wage job.
 
+![header](https://github.com/user-attachments/assets/f2e0a5cf-4983-4dcd-8ef8-3d1d7fcc27ff)
+
 ## Skills Used:
 
 -   Python
@@ -30,3 +32,5 @@ A financial analysis of the cost of living in Victoria, BC is done using web scr
 -   **_Note:_** all calculations are estimates and only meant for demonstration purposes
 
 ## Screenshots
+
+![screenshot](https://github.com/user-attachments/assets/dfaea008-1237-4b71-943e-2ac380260c60)
