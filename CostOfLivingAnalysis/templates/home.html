@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cost of Living Analysis</title>
+        {{ bootstrap.load_css() }}
+        <link rel="stylesheet" href="./static/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap" rel="stylesheet" />
+    </head>
+    <body class="background-colour">
+        <div class="container">
+            <div class="row py-5">
+                <h1 class="py-1 text-center text-colour fw-bold">Cost of Living Analysis</h1>
+                <h3 class="py-3 text-center text-colour fw-bolder">Victoria, British Columbia</h3>
+                <hr />
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 g-md-5 align-items-end">
+                <div class="col info-box text-center text-colour">
+                    <h5>Average current listing price for purchasing a condo:</h5>
+                    <div class="text-box text-colour d-flex align-items-center justify-content-center">
+                        <p class="data-text">{{ "${:,}".format(real_estate_data) }}</p>
+                    </div>
+                </div>
+                <div class="col info-box text-center text-colour">
+                    <h5>Average wage for currently posted job listings:</h5>
+                    <div class="text-box text-colour d-flex align-items-center justify-content-center">
+                        <p class="data-text">${{"{0:.2f}".format(wage_data)}}/hr</p>
+                    </div>
+                </div>
+                <div class="col info-box text-center text-colour">
+                    <h5>Estimated cost of living expenses for a single person:</h5>
+                    <div class="text-box text-colour d-flex align-items-center justify-content-center">
+                        <p class="data-text">{{ "${:,}".format(expenses_data) }}</p>
+                    </div>
+                </div>
+                <div class="col info-box text-center text-colour">
+                    <h5>
+                        Time for a single person to save for a 10% down payment of a condo while working at an average
+                        hourly rate:
+                    </h5>
+                    <div class="text-box text-colour d-flex align-items-center justify-content-center">
+                        <p class="data-text">{{months_to_save_for_down_payment}} months</p>
+                    </div>
+                </div>
+                <div class="col info-box text-center text-colour">
+                    <h5>
+                        Time needed for a single person working at an average hourly rate to pay off an average condo
+                        mortgage:
+                    </h5>
+                    <div class="text-box text-colour d-flex align-items-center justify-content-center">
+                        <p class="data-text">{{years_needed_to_pay_off_mortgage}} years</p>
+                    </div>
+                </div>
+                <div class="col info-box text-center text-colour">
+                    <h5>
+                        Time needed for two adults working at minimum wage to save for a 10% down payment of a condo:
+                    </h5>
+                    <div class="text-box text-colour d-flex align-items-center justify-content-center">
+                        <p class="data-text">{{months_for_two_adults_down_payment}} months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ bootstrap.load_js() }}
+    </body>
+</html>
