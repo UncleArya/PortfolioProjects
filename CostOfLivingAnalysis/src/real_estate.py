@@ -5,7 +5,7 @@ import csv
 
 # URL & Headers
 REAL_ESTATE_URL_START = "https://www.remax.ca/bc/victoria-real-estate?lang=en&pageNumber="
-REAL_ESTATE_URL_END = "&priceMin=&priceMax=&pricePerSqftMin=&pricePerSqftMax=&priceType=0&sqftMin=&sqftMax=&lotSizeMin=&lotSizeMax=&bedsMin=1&bedsMax=2&bathsMin=&bathsMax=&featuredListings=&isRemaxListing=false&comingSoon=false&updatedInLastNumDays=&featuredLuxury=false&minImages=&house=false&townhouse=false&condo=false&rental=false&land=false&farm=false&duplex=false&cottage=false&other=false&commercial=false&commercialLease=false&vacantLand=false&hotelResort=false&businessOpportunity=false&rentalsOnly=false&commercialOnly=false&luxuryOnly=false&hasOpenHouse=false&hasVirtualOpenHouse=false&parkingSpacesMin=&parkingSpacesMax=&commercialSqftMin=&commercialSqftMax=&unitsMin=&unitsMax=&storiesMin=&storiesMax=&totalAcresMin=&totalAcresMax=&Agriculture=false&Automotive=false&Construction=false&Grocery=false&Hospitality=false&Hotel=false&Industrial=false&Manufacturing=false&Multi-Family=false&Office=false&Professional=false&Restaurant=false&Retail=false&Service=false&Transportation=false&Warehouse=false"
+REAL_ESTATE_URL_END = "&priceMin=&priceMax=&pricePerSqftMin=&pricePerSqftMax=&priceType=0&sqftMin=&sqftMax=&lotSizeMin=&lotSizeMax=&bedsMin=1&bedsMax=2&bathsMin=&bathsMax=&featuredListings=&isRemaxListing=false&comingSoon=false&updatedInLastNumDays=&featuredLuxury=false&minImages=&house=false&townhouse=false&condo=false&rental=false&land=false&farm=false&duplex=false&cottage=false&other=false&commercial=false&commercialLease=false&vacantLand=false&hotelResort=false&businessOpportunity=false&rentalsOnly=false&commercialOnly=false&luxuryOnly=false&hasOpenHouse=false&hasVirtualOpenHouse=false&parkingSpacesMin=&parkingSpacesMax=&commercialSqftMin=&commercialSqftMax=&unitsMin=&unitsMax=&storiesMin=&storiesMax=&real_estate_totalAcresMin=&totalAcresMax=&Agriculture=false&Automotive=false&Construction=false&Grocery=false&Hospitality=false&Hotel=false&Industrial=false&Manufacturing=false&Multi-Family=false&Office=false&Professional=false&Restaurant=false&Retail=false&Service=false&Transportation=false&Warehouse=false"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0"
 ACCEPT_LANGAUGE = "en-CA,en-US;q=0.7,en;q=0.3"
 
@@ -28,7 +28,7 @@ class Real_Estate:
             for price in prices:
                 raw_price = price.text.replace("$", "").replace(",", "")
                 if raw_price:
-                    self.real_estate_prices.append(raw_price)
+                    self.real_estate_prices.append(int(raw_price))
 
             print(f"Page {page} scraped...")
 
@@ -39,5 +39,8 @@ class Real_Estate:
             for listing in self.real_estate_prices:
                 real_estate_csv.writerow([listing])
 
-    def obtain_real_estate_data(self):
-        pass
+    def obtain_real_estate_data(self, file):
+        self.csv_file = file
+        with open(self.csv_file, mode="r") as csv_file:
+            real_estate_total = sum(int(row[0]) for row in csv.reader(csv_file))
+        return real_estate_total

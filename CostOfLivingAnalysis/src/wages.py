@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+import csv
 import unicodedata
 import statistics
 
@@ -32,8 +33,9 @@ class Wages:
                 self.wages.append(hourly_rate)
             else:
                 self.wages.append(float(salary_raw))
-
-        return statistics.mean(self.wages)
+        print(self.wages)
+        wage = statistics.mean(self.wages)
+        return wage
 
     def get_second_wage_data_source(self):
         webpage = requests.get(
@@ -44,8 +46,17 @@ class Wages:
         wage = float(soup.select(".c-card__stats-info > b")[3].text.replace("$", ""))
         return wage
 
-    def obtain_wage_data(self):
+    def update_wage_data(self, file):
+        self.csv_file = file
         source_1 = self.get_first_wage_data_source()
         source_2 = self.get_second_wage_data_source()
         average_wage = round(((source_1 + source_2) / 2), 2)
-        return average_wage
+        with open(self.csv_file, mode="w") as csv_file:
+            wages_csv = csv.writer(csv_file)
+            wages_csv.writerow([average_wage])
+
+    def obtain_wage_data(self, file):
+        self.csv_file = file
+        with open(self.csv_file, mode="r") as csv_file:
+            wages_total = sum(float(row[0]) for row in csv.reader(csv_file))
+            return wages_total
